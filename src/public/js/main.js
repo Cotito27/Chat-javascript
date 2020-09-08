@@ -18,6 +18,9 @@ $(function () {
 
     if(sessionStorage.username!=""&&sessionStorage.username!=undefined
     &&sessionStorage.username!=null){
+      $('#nickWrap').hide();
+      $('#contentWrap').show();
+      $('#message').focus();
       addUsers(sessionStorage.username);
     }
 
