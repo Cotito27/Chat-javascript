@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
-//mongoose.connect('mongodb://admin:6W3cjggIGqF8yKnl@SG-chat-37819.servers.mongodirector.com:27017/admin', {
-//mongoose.connect('mongodb://Publico:CotitoMononomoxd_27@SG-chat-37819.servers.mongodirector.com:27017/chat', {
-//mongoose.connect('mongodb://localhost/chat', {
-mongoose.connect('mongodb+srv://admin:CyjfW4yGM7ZkzFH@cluster0.qpdve.azure.mongodb.net/Chat?retryWrites=true&w=majority', {
+
+mongoose.connect(process.env.URL_MONGODB, {
     useNewUrlParser: true
 })
   .then(db => console.log('db connected'))
